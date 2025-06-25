@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!--Imagem padrão-pequeno usando min-width-->
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem flexivel">
+        <!--Imagem padrão-Grande usando o max-width -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamas aprender a reproduzir áudios em HTML5.</p>
+    <audio src="audios/prodigio_-_sonhos_com_preço__feat._abdiel___thanya.mp3" controls loop preload="auto" autoplay></audio>
+    <audio controls preload="metadata" loop >
+        <source src="audios/summer_nostalgia.mp3" type="audio/mpeg">
+        <!--<source src="audios/summer_nostalgia.ogv" type="audio/ogg">
+        <source src="audios/summer_nostalgia.wav" type="audio/wav">
+        <source src="audios/summer_nostalgia.webm" type="audio/webm">-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudios. <a href="audios/summer_nostalgia.mp3">Clique a aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
